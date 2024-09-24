@@ -82,13 +82,20 @@
     \end{tabular*}
     \vspace{-2mm}
 }
+\newcommand{\resumePORA}[3]{
+	\vspace{0.5mm}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+	\end{tabular*}
+	\vspace{-2mm}
+}
 
 \newcommand{\resumeSubheading}[4]{
-\vspace{-0.35mm}\item
+\vspace{-1.8mm}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    	\vspace{-0.2mm}
+    	\vspace{-0.6mm}
         \textbf{#1} & \textit{\footnotesize{#4}} \\
-        \vspace{-0.2mm}
+        
         \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
     \end{tabular*}
     \vspace{-0.9mm}
@@ -169,40 +176,36 @@
 %----------HEADING-----------------
 
 
-\parbox{2.4cm}{%
-\raisebox{-2.6cm}{\includegraphics[width=2cm,clip]{logo.png}}
-}
+
 \parbox{\dimexpr\linewidth-2.8cm\relax}{
-\begin{tabularx}{\linewidth}{L r} \\
-  \textbf{\Large \name} \\
-  %{Enrollment No. - \roll} & 
-  \course & {\raisebox{0.0\height}{\footnotesize \faPhone}\ \href{callto:\phone}{+91-\phone}}\\
-  {Computer Application} &  \href{personal mail:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
-  {Maharaja Surajmal Institute, Delhi} &  \href{college mail:\emailb}{\raisebox{0.0\height}{\footnotesize  }\ {}}\\
-\end{tabularx}
-\vspace{-5.0mm}
+	\vspace{8mm}
+	\begin{tabularx}{\linewidth}{l r}  % Two columns: left-aligned (l) and right-aligned (r)
+		\textbf{\huge \name} & \\  % Name aligned left
+		{} & \raisebox{0.0\height}{\footnotesize \faLink} \href{https://deepanshuarya.tech/}{deepanshuarya.tech} \\
+		{} & \raisebox{0.0\height}{\footnotesize \faPhone} \href{callto:+91-\phone}{+91-\phone} \\  % Phone number aligned left
+		  % Email aligned left
+		\parbox{12cm}{  % Box for the right-aligned icons
+			\flushleft
+			\vspace{-16mm}  % Adjust vertical spacing
+			\href{https://deepanshuarya.tech/}{\includegraphics[width=1cm,clip]{frame.png}}
+			\hspace{0.5em}
+			\href{https://www.linkedin.com/in/deepanshuarya2024/}{\includegraphics[width=1cm,clip]{icons8-linked-in-480.png}}
+			\hspace{0.5em}
+			\href{https://github.com/sudo-arya/}{\includegraphics[width=1cm,clip]{icons8-github-480.png}}
+			\hspace{0.5em}
+			\href{https://codeforces.com/profile/TLE_lord}{\includegraphics[width=1cm,clip]{codeforces.png}}
+			
+		} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope} \emaila} \\
+	\end{tabularx}
 }
-\parbox{18.6cm}{%
-\flushright
-\vspace{-6.5mm}
-%\href{https://auth.geeksforgeeks.org/user/sudo_arya}{\includegraphics[width=1cm,clip]{icons8-geeksforgeeks-480.png}\thinspace \thinspace}
-%\href{https://leetcode.com/sudo_arya/}{\includegraphics[width=1cm,clip]{icons8-level-up-your-coding-skills-and-quickly-land-a-job-96.png}\thinspace \thinspace}
-\href{https://codeforces.com/profile/TLE_lord}{\includegraphics[width=0.9cm,clip]{codeforces.png}}
-\hspace{0.5em}
-\href{https://github.com/sudo-arya/}{\includegraphics[width=1cm,clip]{icons8-github-480.png}}
-\hspace{0.5em}
-\href{https://play.picoctf.org/users/sudo_arya}{\includegraphics[width=1cm,clip]{picoCTF_logo.jpeg}}
-\hspace{0.5em}
-\href{https://www.linkedin.com/in/deepanshu-arya-2931a822b/}{\includegraphics[width=1cm,clip]{icons8-linked-in-480.png}}
-\hspace{0.5em}
-}
+
 %linkedin - https://www.linkedin.com/in/deepanshu-arya-2931a822b/
 % gfg - https://auth.geeksforgeeks.org/user/sudo_arya
 % leetcode - https://leetcode.com/sudo_arya/
 % github - https://github.com/sudo-arya/
 % Undergraduate - Bachelor of computer applications
 % Address - II F House no 20 Block No 8 Khichripur Delhi - 110091
-\vspace{-8.0mm}
+\vspace{-6.5mm}
 
 
 %-----------Summary-----------------
@@ -215,47 +218,60 @@
 %-----------EDUCATION-----------
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
+  \vspace{1.2mm}
+  \resumeSubheading
+  {Indira Gandhi National Open University (IGNOU)}{CGPA\thinspace:{\textbf{\textcolor{sand}{ \thinspace ---}}}}
+  {Pursuing masters program Master of Computer Application}{2024-26}
+  \vspace{-2.6mm}
     \resumeSubheading
-      {Maharaja Surajmal Institute,Delhi}{CGPA\thinspace:{\textbf{\textcolor{sand}{ \thinspace 8.794}}}}
-      {Pursuing undergraduate program Bachelor of Computer Application (Hons) in Data Science}{2021-24}
-      \vspace{-2.7mm}
+      {Maharaja Surajmal Institute,Delhi}{CGPA\thinspace:{\textbf{\textcolor{sand}{ \thinspace 8.798}}}}
+      {Completed undergraduate program Bachelor of Computer Application (Hons) in Data Science}{2021-24}
+      \vspace{-2.6mm}
     \resumeSubheading
       {12th Class}{Percentage\thinspace:{\textbf{\textcolor{sand}{ \thinspace75\%}}}}
       {Kala Niketan International School (CBSE), Delhi}{(offline) 2020}
-      \vspace{-2.7mm}
-    \resumeSubheading
-      {10th Class}{Percentage\thinspace:{\textbf{\textcolor{sand}{ \thinspace 81.4\%}}}}
-      {Kala Niketan International School (CBSE), Delhi}{(offline) 2018}
+      \vspace{0.2mm}
+    
+       
   \resumeSubHeadingListEnd
-\vspace{-8.0mm}
+
 %
-\vspace{0.60mm}
+ \vspace{-8.0mm}
 %-----------EXPERIENCE-----------------
 \section{\textbf{Experience}}
   \resumeSubHeadingListStart
+  \vspace{2mm}
+  \resumeSubheading
+  {\href{}{ Pre Doctoral Fellowship @ IIT Kharagpur }}{}{}{Aug 24 - Present}
+  \vspace{-6.8mm}
+  \resumeItemListStart
+  \item { Currently developing \customtext{\textbf{\textcolor{sand}{IOT based Monitoring Solution}}} under Dr. Vivek Dixit}
+  \resumeItemListEnd
+  \vspace{-1.2mm}
+  
+  \resumeSubheading
+  {\href{}{ Frelance Web Developer}}{}{}{May 2024 - Present}
+  \vspace{-6.8mm}
+  \resumeItemListStart
+  \item { Developed and deployed websites for companies, tailored to their specific business needs.\\ {i.e. \href{https://galleontrading.netlify.app/}{\customtext{\textbf{\textcolor{sand}{Galleon Trading{\color{gray}\textbf{(\includegraphics[width=0.3cm,clip]{url.png})}}}}}}, \href{https://infosecmediasolutions.com/}{\customtext{\textbf{\textcolor{sand}{Infosec Media Solutions{\color{gray}\textbf{(\includegraphics[width=0.3cm,clip]{url.png})}} }}}} }}
+  \item { Worked closely with clients to ensure on-time delivery and post-deployment support. }
+  \resumeItemListEnd
+  \vspace{-1.2mm}
   
   \resumeSubheading
   { \href{https://drive.google.com/file/d/1ZNoRp0EB6hrygvFPSQCxQaDED3AuGTaY/view?usp=sharing}{Software Development Cell {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}}}{}
-  {}{Jun 23 - till date}
-  \vspace{-6.9mm}
+  {}{Jun 23 - Jun 24}
+  \vspace{-6.8mm}
   \resumeItemListStart
   \item { Core Team Member of college Software Development Cell.} 
-  \item { Engineered and optimized college software solutions, i.e. \customtext{\textbf{\textcolor{sand}{ID Card Generator}}} and \customtext{\textbf{\textcolor{sand}{Alumni Management Portal}}}, within a cross-functional team, utilized \customtext{\textbf{\textcolor{sand}{Agile}}} methodologies \& version control systems (\customtext{\textbf{\textcolor{sand}{Git}}}) to streamline development processes \& ensure efficient collaboration.}
+  \item { Engineered and optimized college software solutions, i.e.\customtext{\textbf{\textcolor{sand}{Attendance Management Solution}}}, \customtext{\textbf{\textcolor{sand}{ID Card Generator}}} and \customtext{\textbf{\textcolor{sand}{Alumni Management Portal}}}, within a cross-functional team, utilized \customtext{\textbf{\textcolor{sand}{Agile}}} methodologies \& version control systems (\customtext{\textbf{\textcolor{sand}{Git}}}) to streamline development processes \& ensure efficient collaboration.}
   \item {Implemented data processing systems, saving \customtext{\textbf{\textcolor{sand}{20+ hrs/week}}} in manual effort for faculty and staff.}
   \resumeItemListEnd
   
-  \vspace{-2.8mm}
+  \vspace{-1.6mm}
   \vspace{0.7mm}
   
-    \resumeSubheading
-      {\href{https://drive.google.com/file/d/1NbArOSGbm08ZH0kIK9mHW6UWDEswz79z/view}{Openweaver Full-Stack Virtual Internship {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}}}{}{}{August - October}
-      \vspace{-6.8mm}
-      \resumeItemListStart
-    \item { Completed a virtual internship program focused on \customtext{\textbf{\textcolor{sand}{Web-AI}}} Integration.}
-    \item { Designed, developed, \& deployed a functional website using OpenStudio platform which summarizes \&
-translate text. }
-    \resumeItemListEnd
-    \vspace{-0.199mm}
+    
     
       
   \resumeSubHeadingListEnd
@@ -263,9 +279,22 @@ translate text. }
 %
 \vspace{-0.27mm}
 %-----------PROJECTS-----------------
-\section{\textbf{Personal Projects}}
+\section{\textbf{Projects}}
 \resumeSubHeadingListStart
 \vspace{-0.4mm}
+
+	\resumeProject
+	{ \href{https://msiams.netlify.app/}{MSI-AMS |  \customtext{\textbf{\textcolor{temp2}{\kern-0.05em \footnotesize MySQL, ExpressJS, ReactJS, NodeJS, Flutter}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}}} %Project Name
+	{} %Project Name, Location Name
+	{} %Event Dates
+	
+	\resumeItemListStart
+	\item { Developed a \customtext{\textbf{\textcolor{sand}{two-click}}} attendance marking system that allows faculty to take attendance using \customtext{\textbf{\textcolor{sand}{QR code}}}, transitioning from a pen-and-paper method to a digital platform.}
+	\item { Created a \customtext{\textbf{\textcolor{sand}{mobile app}}} enabling secure attendance marking with \customtext{\textbf{\textcolor{sand}{Google login}}}, allowing students to view their attendance history and providing detailed reporting, enhancing user experience and reducing human error.}
+	
+	\resumeItemListEnd
+	\vspace{-2.5mm}   
+
     \resumeProject
       { \href{https://sudo-chat.onrender.com}{Web Chat application |  \customtext{\textbf{\textcolor{temp2}{\kern-0.05em \footnotesize MongoDB, ExpressJS, ReactJS, NodeJS}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}}} %Project Name
       {} %Project Name, Location Name
@@ -291,13 +320,13 @@ translate text. }
     \vspace{-2.5mm}
     
     \resumeProject
-    { \href{https://deepanshuarya.tech/}{Portfolio Web App |  \customtext{\textbf{\textcolor{temp2}{\kern-0.05em \footnotesize React, Tailwind, Vite, react-pdf}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}}} %Project Name
+    { \href{https://github.com/sudo-arya/dictate-it}{Dictate It |  \customtext{\textbf{\textcolor{temp2}{\kern-0.05em \footnotesize Javascript, Tailwind, Web Speech API, JSON}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}}} %Project Name
     {} %Project Name, Location Name
     {} %Event Dates
     
     \resumeItemListStart
-    \item {Developed a responsive \& visually appealing portfolio website using React, Vite, Tailwind CSS, \& react-pdf prioritizing user experience, smooth animations, efficient routing, \& documentation viewing capabilities.}
-    \item {Implemented optimized performance with Vite's lightning-fast builds (avg. \customtext{\textbf{\textcolor{sand}{<300ms}}}) \& React's efficient rendering, achieving \customtext{\textbf{\textcolor{sand}{95+}}} Lighthouse score for performance, accessibility \& good coding practices.}
+    \item { Developed a \customtext{\textbf{\textcolor{sand}{Chrome extension}}} that dictates selected text on webpages, enhancing accessibility \& user experience.}
+    \item { Implemented feature allowing users to configure TTS to pause after a \customtext{\textbf{\textcolor{sand}{specific number}}} of words for a \customtext{\textbf{\textcolor{sand}{defined duration}}}.}
     
     \resumeItemListEnd
     \vspace{-2.5mm}   
@@ -311,8 +340,8 @@ translate text. }
 \section{\textbf{Technical Skills and Interests}}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-     \textbf{Development Stack}{ \thinspace: \customtext{\textbf{\textcolor{sand}{ HTML/CSS, Js, C/C++, MySQL, MERN, Kotlin, JetpackCompose}}}} \\
-     \textbf{Developer Tools}{ \thinspace: \customtext{\textbf{\textcolor{sand}{Git, Linux, Vs Code, Android Studio}}}} \\
+     \textbf{Development Stack}{ \thinspace: \customtext{\textbf{\textcolor{sand}{ HTML/CSS, Js, C/C++, Python, MicroPython, MySQL, MERN, Kotlin, JetpackCompose}}}} \\
+     \textbf{Developer Tools}{ \thinspace: \customtext{\textbf{\textcolor{sand}{Git, Linux, Vs Code, Android Studio, Postman}}}} \\
      %\textbf{Frameworks}{\thinspace: \customtext{\textbf{\textcolor{sand}{ MERN, JavaScript, Latex, Kotlin, JetpackCompose}}}} \\
      % \textbf{Cloud/Databases}{: } \\
      %\textbf{Soft Skills}{ \thinspace:\thinspace \customtext{\textbf{\textcolor{sand}{logical reasoning, analytical skills, Collaborative}}}} \\
@@ -345,17 +374,17 @@ translate text. }
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
  
-\resumePOR{  \href{https://drive.google.com/file/d/1Tpn3K8eK5zJWloIA06yOFw7PCoLqy-3t/view}{Achieved \thinspace{\customtext{\textbf{\textcolor{sand}{5th}}}} position in Cyber Security Hackathon {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}} } % Award
-    {\\ \thinspace \thinspace Get Set Hack by RISE in collaboration with Thrive dx.} % Event
+\resumePORA{  \href{https://drive.google.com/file/d/1Tpn3K8eK5zJWloIA06yOFw7PCoLqy-3t/view}{Achieved \thinspace{\customtext{\textbf{\textcolor{sand}{5th}}}} place in Cyber Security Hackathon "Get Set Hack" by RISE \& ThriveDX. {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}} } % Award
+    {} % Event
     {} %Event Year
     
 \vspace{-1.5mm}
-\resumePOR{  \href{https://drive.google.com/file/d/1lbA1B5IqrB63UNGqP2AWA_5tU-p_JPjT/view}{{Secured \customtext{\textbf{\textcolor{sand}{1st}}}} place in the {\customtext{\textbf{\textcolor{sand}{SIH 2023}}}} Hackathon {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}} } % Award
-    {\\ \thinspace \thinspace Led a team of 5 members to develop, AyuMonk an ayurvedic affinity prediction system.} % Event
+\resumePORA{  \href{https://drive.google.com/file/d/1lbA1B5IqrB63UNGqP2AWA_5tU-p_JPjT/view}{{Secured \customtext{\textbf{\textcolor{sand}{1st}}}} place in {\customtext{\textbf{\textcolor{sand}{SIH 2023}}}} Hackathon, leading a team of 5 to develop "AyuMonk". {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}} } % Award
+    {} % Event
     {} %Event Year
     
     \vspace{-1.5mm}
-    \resumePOR{  \href{https://drive.google.com/file/d/1jHHO7sfI8_siICWUdF21CH2A8n44mG2_/view?usp=sharing}{Published a research paper at the {\customtext{\textbf{\textcolor{sand}{Springer Conference}}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}} } % Award
+    \resumePORA{  \href{https://drive.google.com/file/d/1jHHO7sfI8_siICWUdF21CH2A8n44mG2_/view?usp=sharing}{Presented a research paper at {\customtext{\textbf{\textcolor{sand}{Jamia Hamdard Conference}}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}} } % Award
     {} % Event
     {} %Event Year
 
@@ -366,19 +395,19 @@ translate text. }
 \section{\textbf{Certifications}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
- \resumePOR{ Completed \href{https://www.coursera.org/user/41d23a6a1b3adac32aa9ec46b489b796}{Google Program for \customtext{\textbf{\textcolor{sand}{CyberSecurity Professionals}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}} } % Award
-     {\\ \thinspace Embarked on a career path in cybersecurity through a comprehensive certificate program. } % Event
-     {} %Event Year
-    \vspace{-1.5mm}
+ %\resumePOR{ Completed \href{https://www.coursera.org/user/41d23a6a1b3adac32aa9ec46b489b796}{Google Program for \customtext{\textbf{\textcolor{sand}{CyberSecurity Professionals}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}} } % Award
+    % {\\ \thinspace Embarked on a career path in cybersecurity through a comprehensive certificate program. } % Event
+     %{} %Event Year
+    %\vspace{-1.5mm}
 \resumePOR{ Completed \href{https://www.cloudskillsboost.google/public_profiles/91489762-1602-483b-ab67-1b39c37ef97e}{Google Cloud Certified Programme ({\customtext{\textbf{\textcolor{sand}{GCCP}}}}) and {\customtext{\textbf{\textcolor{sand}{Arcade}}}} {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}}} % Award
     {\\ \thinspace \thinspace \thinspace Has \href{https://drive.google.com/file/d/1W1SGN5S8B5xBssxEpR7Hf7R4qthaMAJq/view}{AWS practitioner certification from ICT Academy too. {\color{gray}\textbf{(link \includegraphics[width=0.3cm,clip]{url.png})}}}} % Event
     {} %Event Year
 
 \vspace{-1.5mm}
-\resumePOR{ Completed {\customtext{\textbf{\textcolor{sand}{8 MOOC}}}} courses by {\customtext{\textbf{\textcolor{sand}{NPTEL}}}}(IIT Madras){\color{gray}\textbf{(Courses name are clickable \includegraphics[width=0.3cm,clip]{url.png})}}} % Award
-    {\\ \thinspace \thinspace \href{https://drive.google.com/file/d/1NNtPU47EDwctv0La5WJ61f8TtA5C4N00/view}{Embedded System Design}, \href{https://drive.google.com/file/d/1ep8HiIOPxlmtNReNDM3sXMoEGXwcTwaq/view}{OS}, \href{https://drive.google.com/file/d/1KUPU6qSUxFanrBwR6eKQG2otpBUHx37s/view}{Ethical Hacking}, \href{https://drive.google.com/file/d/1V7lfHvy9bH8j2tYGKsqHzlkveVSJXazc/view}{Blockchain}, \href{https://drive.google.com/file/d/12imWro24FSbGDvn6VBiS0YYjT1uFIXU7/view}{Soft Computing}, 
-	\href{https://drive.google.com/file/d/1NsnSqtSW_yQDYfZV8zclOZWUEt48u8pQ/view}{Enhancing Soft Skills},
-	\\ \thinspace \thinspace \href{https://drive.google.com/file/d/1QJ5iCmB-Ika9MRtwK3N__Cm9mOQpMgwA/view}{Cyber Security and Privacy}, \href{https://drive.google.com/file/d/1-QCK_lZAXbsWc8CTXkgXgBNsHD8h2TEC/view}{Social Network and Analysis}} % Event
+\resumePOR{ Completed {\customtext{\textbf{\textcolor{sand}{9 MOOC}}}} courses by {\customtext{\textbf{\textcolor{sand}{NPTEL}}}}(IIT Madras){\color{gray}\textbf{(Courses name are clickable \includegraphics[width=0.3cm,clip]{url.png})}}} % Award
+    {\\ \thinspace \thinspace \href{https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS93S1324053909029523}{Embedded System Design}, \href{https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS78S2324114009029523}{OS}, \href{https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS44S2344088504100972}{Ethical Hacking}, \href{https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS47S3344132104100972}{Blockchain}, \href{https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS40S4442171903039511}{Soft Computing}, 
+	\href{https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23HS30S4344245804100972}{Enhancing Soft Skills},
+	\\ \thinspace \thinspace \href{https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/108/noc24-ee38/Course/NPTEL24EE38S45430276730459110.pdf}{Computer Vision}, \href{https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs127/Course/NPTEL23CS127S63430921520146520.pdf}{Cyber Security and Privacy}, \href{https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs106/Course/NPTEL23CS106S53430894920146520.pdf}{Social Network and Analysis}} % Event
     {} %Event Year
 \resumeSubHeadingListEnd
 \vspace{-10.5mm}
