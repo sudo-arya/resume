@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.14)  25 SEP 2024 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.14)  25 SEP 2024 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,32 +1299,32 @@ Package pdftex.def Info: url.png  used on input line 315.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 327.
+Package pdftex.def Info: url.png  used on input line 328.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 380.
+Package pdftex.def Info: url.png  used on input line 381.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 385.
+Package pdftex.def Info: url.png  used on input line 386.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 391.
+Package pdftex.def Info: url.png  used on input line 392.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 391.
+Package pdftex.def Info: url.png  used on input line 392.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 391.
+Package pdftex.def Info: url.png  used on input line 392.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.391 	{}
+l.392 	{}
           %Event Year
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1333,7 +1333,7 @@ Try to go on, since this might almost work.
 ! Extra }, or forgotten \endgroup.
 \resumePORA ...t]{l@{\extracolsep {\fill }}r} {#1}
                                                   \hspace {0.3mm}#2 & \texti...
-l.391 	{}
+l.392 	{}
           %Event Year
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1343,24 +1343,24 @@ deleted material, e.g., by typing `I$}'.
 
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 405.
+Package pdftex.def Info: url.png  used on input line 407.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 
-Overfull \hbox (14.0428pt too wide) in alignment at lines 405--405
+Overfull \hbox (14.0428pt too wide) in alignment at lines 407--407
 [] [] 
  []
 
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 422.
+Package pdftex.def Info: url.png  used on input line 424.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 422.
+Package pdftex.def Info: url.png  used on input line 424.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 File: url.png Graphic file (type png)
 <use url.png>
-Package pdftex.def Info: url.png  used on input line 429.
+Package pdftex.def Info: url.png  used on input line 431.
 (pdftex.def)             Requested size: 8.5359pt x 8.53558pt.
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -1402,7 +1402,7 @@ ype1/public/lm/lmr9.pfb><C:/Users/whoam/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/lm/lmri9.pfb><C:/Users/whoam/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/lm/lmssbx10.pfb><C:/Users/whoam/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/lm/lmsy6.pfb>
-Output written on main.pdf (1 page, 353180 bytes).
+Output written on main.pdf (1 page, 353272 bytes).
 PDF statistics:
  253 PDF objects out of 1000 (max. 8388607)
  9 named destinations out of 1000 (max. 500000)
